@@ -18,4 +18,4 @@ use App\Http\Controllers\API\PacienteController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('pacientes',[PacienteController::class]);
+Route::get('pacientes',[PacienteController::class,'index']);
